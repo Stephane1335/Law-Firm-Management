@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="itemC" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="687.0" spacing="25.0" style="-fx-background-color: #02030A; -fx-background-radius: 5; -fx-background-insets: 0;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <effect>
+        <DropShadow blurType="GAUSSIAN" height="5.0" radius="2.0" width="5.0" />
+    </effect>
+   <children>
+      <Label prefHeight="17.0" prefWidth="63.0" text="10/08/2021" textFill="#e7e5e5" />
+      <Label prefHeight="17.0" prefWidth="20.0" text="SD" textFill="#e7e5e5" />
+      <Label prefHeight="17.0" prefWidth="34.0" text="                  " textFill="#e7e5e5" />
+      <Label text="CDNC" textFill="#e7e5e5" />
+      <Label prefHeight="17.0" prefWidth="70.0" text="Frais Divers" textFill="#e7e5e5" />
+      <Label prefHeight="17.0" prefWidth="116.0" text="Timbre fiscal" textFill="#e7e5e5" />
+      <Label text="02:00" textFill="#e7e5e5" />
+      <Label text="02:00" textFill="#e7e5e5" />
+      <Label prefHeight="17.0" prefWidth="72.0" text="100.000FCFA" textFill="#e7e5e5" />
+   </children>
+</HBox>

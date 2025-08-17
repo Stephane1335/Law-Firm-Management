@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.DetailAgendaasoController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="576.0" prefWidth="256.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/jimmy-fallon.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="50.0" />
+               </VBox.margin></ImageView>
+            <Label fx:id="nomuser" text="Admin" textFill="#e7e5e5" />
+            <Label text="Avocat associés" textFill="#e7e5e5">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="btnOverview" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#GoToHome" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Accueil" textFill="#e7e5e5">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Home_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnOrders" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#GoToDossier" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Affaires">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Open_Envelope_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnCustomers" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#GoToClient" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Clients">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Person_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnMenus" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#GoToAgent" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Agents">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Xbox_Menu_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnPackages" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#GoToAgenda" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #ffffff; -fx-text-fill: #000000;" stylesheets="@style.css" text="Agenda">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Box_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnSettings" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#GoToTache" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Tâches">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Slider__32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnSignout" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Deconnexion">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Sign_Out_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <StackPane layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A;">
+         <children>
+            <Pane fx:id="pnlCustomer" prefHeight="200.0" prefWidth="200.0" />
+            <Pane fx:id="pnlOrders" prefHeight="200.0" prefWidth="200.0" />
+            <Pane fx:id="pnlMenus" prefHeight="200.0" prefWidth="200.0" />
+            <Pane fx:id="pnlOverview" prefHeight="554.0" prefWidth="793.0">
+               <children>
+                  <Label layoutX="174.0" layoutY="54.0" text="Details du rendez-vous" textFill="#e7e5e5">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                  </Label>
+                  <Text fill="WHITE" layoutX="361.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heure du rdv" wrappingWidth="92.34765625">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="594.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lieu du rdv" wrappingWidth="92.34765625">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="76.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date du rdv" wrappingWidth="98.34765625">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="80.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00-00-2020" wrappingWidth="83.00000000000003">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="370.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12H00" wrappingWidth="54.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="591.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cocody, Angre" wrappingWidth="98.34765625">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="48.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum it dolor" wrappingWidth="146.34765625">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="361.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client du rdv" wrappingWidth="92.34765625">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="591.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dossier du rdv" wrappingWidth="98.34765625">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="76.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Objet du rdv" wrappingWidth="98.34765625">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="334.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum it dolor" wrappingWidth="146.34765625">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="567.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum it dolor" wrappingWidth="146.34765625">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="558.0" layoutY="525.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="97.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparence;" text="Supprimer" textFill="#e7e5e5" />
+                  <Button layoutX="686.0" layoutY="525.0" mnemonicParsing="false" onAction="#Back" prefHeight="27.0" prefWidth="97.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparence;" text="Retour" textFill="#e7e5e5" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+   <effect>
+      <DropShadow color="#1b1eeb" />
+   </effect>
+</AnchorPane>

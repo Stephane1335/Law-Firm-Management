@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.DetailsDossierAsoController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="576.0" prefWidth="256.0" style="-fx-background-color: #05071F;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/jimmy-fallon.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="50.0" />
+               </VBox.margin></ImageView>
+            <Label fx:id="nomuser" text="Admin" textFill="#e7e5e5" />
+            <Label text="Avocat associés" textFill="#e7e5e5">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="btnOverview" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#GoToHome" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Accueil" textFill="#e7e5e5">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Home_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnOrders" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#GoToDossier" prefHeight="42.0" prefWidth="259.0" style="-fx-background-color: #ffffff; -fx-text-fill: #000000;" stylesheets="@style.css" text="Affaires">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Open_Envelope_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnCustomers" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#GoToClient" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Clients">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Person_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnMenus" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#GoToAgent" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Agents">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Xbox_Menu_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnPackages" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#GoToAgenda" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Agenda">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Box_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnSettings" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#GoToTache" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Tâches">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Slider__32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnSignout" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#Logout" prefHeight="42.0" prefWidth="259.0" stylesheets="@style.css" text="Deconnexion">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Sign_Out_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <StackPane layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A;">
+         <children>
+            <Pane fx:id="pnlCustomer" prefHeight="200.0" prefWidth="200.0" />
+            <Pane fx:id="pnlOrders" prefHeight="200.0" prefWidth="200.0" />
+            <Pane fx:id="pnlMenus" prefHeight="200.0" prefWidth="200.0" />
+            <Pane fx:id="pnlOverview" prefHeight="554.0" prefWidth="793.0">
+               <children>
+                  <Label layoutX="264.0" layoutY="53.0" text="Details affaire" textFill="#e7e5e5">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="70.0" layoutY="162.0" prefHeight="50.0" prefWidth="662.0" style="-fx-background-color: #05071F;">
+                     <children>
+                        <Text fill="WHITE" layoutX="21.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Affaire" wrappingWidth="98.34765625">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="63.0" layoutY="393.0" prefHeight="50.0" prefWidth="301.0" style="-fx-background-color: #05071F;">
+                     <children>
+                        <Text fill="WHITE" layoutX="14.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Partie pour" wrappingWidth="142.34765625">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="437.0" layoutY="393.0" prefHeight="50.0" prefWidth="301.0" style="-fx-background-color: #05071F;">
+                     <children>
+                        <Text fill="WHITE" layoutX="14.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Partie contre" wrappingWidth="158.34765625">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Text fill="WHITE" layoutX="70.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Objet :" wrappingWidth="47.34765625">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="67.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nature :" wrappingWidth="54.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="67.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Juridiction :" wrappingWidth="76.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="68.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Commentaire :" wrappingWidth="98.34765625">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="444.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qualité :" wrappingWidth="54.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="444.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :" wrappingWidth="37.34765625">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="67.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client :" wrappingWidth="47.34765625">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="67.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Avocat:" wrappingWidth="47.34765625">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="437.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personne:" wrappingWidth="67.00000000000003">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="439.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Avocat:" wrappingWidth="47.34765625">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnreturn" layoutX="655.0" layoutY="535.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="27.0" prefWidth="83.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparence;" text="Retour" textFill="#e7e5e5" />
+                  <Button fx:id="btndelete" layoutX="504.0" layoutY="535.0" mnemonicParsing="false" onAction="#delete" prefHeight="27.0" prefWidth="142.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparence;" text="Supprimer l'affaire" textFill="#e7e5e5" />
+                  <Label fx:id="objet" layoutX="128.0" layoutY="232.0" text="Label" textFill="WHITE" />
+                  <Label fx:id="avocat_Opposotion" layoutX="504.0" layoutY="496.0" text="Label" textFill="WHITE" />
+                  <Label fx:id="personne_Opposition" layoutX="504.0" layoutY="458.0" text="Label" textFill="WHITE" />
+                  <Label fx:id="date" layoutX="504.0" layoutY="318.0" text="Label" textFill="WHITE" />
+                  <Label fx:id="qualite" layoutX="504.0" layoutY="280.0" text="Label" textFill="WHITE" />
+                  <Label fx:id="nature" layoutX="128.0" layoutY="269.0" text="Label" textFill="WHITE" />
+                  <Label fx:id="juridiction" layoutX="143.0" layoutY="308.0" text="Label" textFill="WHITE" />
+                  <Label fx:id="commentaire" layoutX="166.0" layoutY="343.0" text="Label" textFill="WHITE" />
+                  <Label fx:id="nomAvocat" layoutX="129.0" layoutY="496.0" text="Label" textFill="WHITE" />
+                  <Label fx:id="nomClient" layoutX="128.0" layoutY="458.0" text="Label" textFill="WHITE" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+   <effect>
+      <DropShadow color="#1b1eeb" />
+   </effect>
+</AnchorPane>
